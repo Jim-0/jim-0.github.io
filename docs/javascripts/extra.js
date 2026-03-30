@@ -21,7 +21,7 @@ window.onload = function () {
     .forEach((element) => {
       try {
         const repo = element.href.match(
-          new RegExp("^https://github.com/(.*)$"),
+          new RegExp("^https://github.com/(.*?)/?$"),
         )[1];
         const tempElem = (() => {
           const tempElem = document.createElement("ul");
